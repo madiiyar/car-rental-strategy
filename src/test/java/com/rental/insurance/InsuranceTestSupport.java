@@ -8,6 +8,11 @@ final class InsuranceTestSupport {
     }
 
     static double costFor(InsuranceType type, RentalRequest request) {
-        return new InsuranceCalculator().calculate(type, request);
+        InsuranceStrategy strategy = switch (type) {
+            case BASIC -> new BasicInsurance();
+            case FULL_COVERAGE -> new FullCoverageInsurance();
+            case YOUNG_DRIVER -> new YoungDriverInsurance();
+        };
+        return new InsuranceContext(strategy).calculate(request);
     }
 }
