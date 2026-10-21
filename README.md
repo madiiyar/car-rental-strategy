@@ -65,5 +65,6 @@ JUnit 5. Every strategy has its own test class, both selectors have tests for ev
 
 The insurance family was written first the "bad" way (one class with a `switch`), then refactored to Strategy. The same test class `InsuranceCostTest` passes on both commits. Only the small test helper `InsuranceTestSupport` changed.
 
-- Before (one class with `switch`): REPLACE_WITH_LINK_TO_BEFORE_COMMIT
-- After (Strategy pattern): REPLACE_WITH_LINK_TO_AFTER_COMMIT
+- Before (one class with `switch`): https://github.com/madiiyar/car-rental-strategy/tree/before-strategy
+- After (Strategy pattern): https://github.com/madiiyar/car-rental-strategy/tree/after-strategy
+- Difference between them: https://github.com/madiiyar/car-rental-strategy/compare/before-strategy...after-strategy
