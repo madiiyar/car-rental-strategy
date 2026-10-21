@@ -1,4 +1,11 @@
 package com.rental;
 
-public class SmokeTest {
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class SmokeTest {
+    @Test
+    void mavenAndJUnitWork() {
+        assertEquals(4, 2 + 2);
+    }
 }
